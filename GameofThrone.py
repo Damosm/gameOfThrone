@@ -6,32 +6,32 @@ from mysql.connector import errorcode
 import unicodedata
 import os
 
-
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
 ########################################################################################################
 #chargement des fichiers
 ########################################################################################################""
 
-with open(r'C:\Users\utilisateur\Documents\Python\GameofThrone\game-of-thrones-srt\season1.json','r',encoding='utf-8') as f:
+with open(dir_path + 'game-of-thrones-srt/season1.json','r',encoding='utf-8') as f:
  data1 = json.load(f)
 
-with open(r'C:\Users\utilisateur\Documents\Python\GameofThrone\game-of-thrones-srt\season2.json','r',encoding='utf-8') as f:
+with open(dir_path + 'game-of-thrones-srt/season2.json','r',encoding='utf-8') as f:
  data2 = json.load(f)
 
-with open(r'C:\Users\utilisateur\Documents\Python\GameofThrone\game-of-thrones-srt\season3.json','r',encoding='utf-8') as f:
+with open(dir_path + 'game-of-thrones-srt/season3.json','r',encoding='utf-8') as f:
  data3 = json.load(f)
 
-with open(r'C:\Users\utilisateur\Documents\Python\GameofThrone\game-of-thrones-srt\season4.json','r',encoding='utf-8') as f:
+with open(dir_path + 'game-of-thrones-srt/season4.json','r',encoding='utf-8') as f:
  data4 = json.load(f)
 
-with open(r'C:\Users\utilisateur\Documents\Python\GameofThrone\game-of-thrones-srt\season5.json','r',encoding='utf-8') as f:
+with open(dir_path + 'game-of-thrones-srt/season5.json','r',encoding='utf-8') as f:
  data5 = json.load(f)
 
-with open(r'C:\Users\utilisateur\Documents\Python\GameofThrone\game-of-thrones-srt\season6.json','r',encoding='utf-8') as f:
+with open(dir_path + 'game-of-thrones-srt/season6.json','r',encoding='utf-8') as f:
  data6 = json.load(f)
  
-with open(r'C:\Users\utilisateur\Documents\Python\GameofThrone\game-of-thrones-srt\season7.json','r',encoding='utf-8') as f:
+with open(dir_path + 'game-of-thrones-srt/season7.json','r',encoding='utf-8') as f:
  data7 = json.load(f)
 #############################################################################################  
 liste_data = (data1,data2,data3,data4,data5,data6,data7)
